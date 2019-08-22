@@ -1,42 +1,41 @@
-# ¹¤³ÌÄÚÈİ
-Õâ¸ö³ÌĞòÊÇ»ùÓÚtensorflowµÄtflearn¿âÊµÏÖ²¿·ÖRCNN¹¦ÄÜ¡£
+# å·¥ç¨‹å†…å®¹
+è¿™ä¸ªç¨‹åºæ˜¯åŸºäºtensorflowçš„tflearnåº“å®ç°éƒ¨åˆ†RCNNåŠŸèƒ½ã€‚
 
-# ¿ª·¢»·¾³
+# å¼€å‘ç¯å¢ƒ
 windows10 + python3.6 + tensorflow1.2 + tflearn + cv2 + scikit-learn + matplotlib
 
-# Êı¾İ¼¯
-²ÉÓÃ17flowers¾İ¼¯, ¹ÙÍøÏÂÔØ£ºhttp://www.robots.ox.ac.uk/~vgg/data/flowers/17/
+# æ•°æ®é›†
+é‡‡ç”¨17flowersæ®é›†, å®˜ç½‘ä¸‹è½½ï¼šhttp://www.robots.ox.ac.uk/~vgg/data/flowers/17/
 
-# ³ÌĞòËµÃ÷
-1¡¢setup.py---³õÊ¼»¯Â·¾¶
-2¡¢config.py---ÅäÖÃ
-3¡¢tools.py---½ø¶ÈÌõºÍÏÔÊ¾´ø¿òÍ¼Ïñ¹¤¾ß
-4¡¢train_alexnet.py---´óÊı¾İ¼¯Ô¤ÑµÁ·AlexnetÍøÂç
-5¡¢preprocessing_RCNN.py---Í¼ÏñµÄ´¦Àí£¨Ñ¡ÔñĞÔËÑË÷¡¢Êı¾İ´æÈ¡µÈ£©
-6¡¢selectivesearch.py---Ñ¡ÔñĞÔËÑË÷Ô´Âë
-7¡¢fine_tune_RCNN.py---Ğ¡Êı¾İ¼¯Î¢µ÷Alexnet
-8¡¢RCNN_output.py---ÑµÁ·SVM²¢²âÊÔRCNN£¨²âÊÔµÄÊ±ºò²âÊÔÍ¼Æ¬Ñ¡ÔñµÚ7¡¢16ÀàÖĞÃ»ÓĞ²ÎÓëÑµÁ·µÄ£¬µ¥¶äµÄ»¨Ğ§¹ûºÃ£¬ÒòÎªÑµÁ·ÓÃµÄ¶¼ÊÇµ¥¶äµÄ£©
+# ç¨‹åºè¯´æ˜
+1ã€setup.py---åˆå§‹åŒ–è·¯å¾„
+2ã€config.py---é…ç½®
+3ã€tools.py---è¿›åº¦æ¡å’Œæ˜¾ç¤ºå¸¦æ¡†å›¾åƒå·¥å…·
+4ã€train_alexnet.py---å¤§æ•°æ®é›†é¢„è®­ç»ƒAlexnetç½‘ç»œ
+5ã€preprocessing_RCNN.py---å›¾åƒçš„å¤„ç†ï¼ˆé€‰æ‹©æ€§æœç´¢ã€æ•°æ®å­˜å–ç­‰ï¼‰
+6ã€selectivesearch.py---é€‰æ‹©æ€§æœç´¢æºç 
+7ã€fine_tune_RCNN.py---å°æ•°æ®é›†å¾®è°ƒAlexnet
+8ã€RCNN_output.py---è®­ç»ƒSVMå¹¶æµ‹è¯•RCNNï¼ˆæµ‹è¯•çš„æ—¶å€™æµ‹è¯•å›¾ç‰‡é€‰æ‹©ç¬¬7ã€16ç±»ä¸­æ²¡æœ‰å‚ä¸è®­ç»ƒçš„ï¼Œå•æœµçš„èŠ±æ•ˆæœå¥½ï¼Œå› ä¸ºè®­ç»ƒç”¨çš„éƒ½æ˜¯å•æœµçš„ï¼‰
 
-# ÎÄ¼şËµÃ÷
-1¡¢train_list.txt---Ô¤ÑµÁ·Êı¾İ£¬Êı¾İÔÚ17flowersÎÄ¼ş¼ĞÖĞ
-2¡¢fine_tune_list.txt---Î¢µ÷Êı¾İ2flowersÎÄ¼ş¼ĞÖĞ
-3¡¢1.png---Ö±½ÓÓÃÑ¡ÔñĞÔËÑË÷µÄÇøÓò»®·Ö
-4¡¢2.png---Í¨¹ıRCNNºóµÄÇøÓò»®·Ö
+# æ–‡ä»¶è¯´æ˜
+1ã€train_list.txt---é¢„è®­ç»ƒæ•°æ®ï¼Œæ•°æ®åœ¨17flowersæ–‡ä»¶å¤¹ä¸­
+2ã€fine_tune_list.txt---å¾®è°ƒæ•°æ®2flowersæ–‡ä»¶å¤¹ä¸­
+3ã€1.png---ç›´æ¥ç”¨é€‰æ‹©æ€§æœç´¢çš„åŒºåŸŸåˆ’åˆ†
+4ã€2.png---é€šè¿‡RCNNåçš„åŒºåŸŸåˆ’åˆ†
 
-# ³ÌĞòÎÊÌâ
-1¡¢ÓÉÓÚÊı¾İ¼¯Ğ¡µÄÔ­Òò£¬ÔÚÎ¢µ÷Ê±ºò²¢Ã»ÓĞÏñÂÛÎÄÒ»Ñù°´Ò»¸öbitch32¸öÕıÑù±¾£¬128¸ö¸ºÑù±¾ÊäÈë£¬¸Ğ¾õÕıÑù±¾¹ıÉÙ£»
-2¡¢»¹Ã»ÓĞ¶®×îºóÊÇÔõÃ´¸øÇøÓò´ò·ÖµÄ£¬ËùÓĞ·Ç¼«´óÖµÒÖÖÆ¼¯ºÏcannyËã×ÓÃ»ÓĞ½øĞĞ£¬´ıĞø£»
-# 3¡¢¶ÔÑ¡ÔñµÄÇøÓòÊÇÖ±½Ó½øĞĞËõ·ÅµÄ£»
-4¡¢ÓÉÓÚÊı¾İ¼¯ºÏÂÛÎÄ²ÉÓÃ²»Ò»Ñù£¬µ«ÊÇÎ¢µ÷ºÍÑµÁ·SVMÊ±²ÉÓÃµÄIOUãĞÖµÒ»Ñù£¬ÓĞ´ıµ÷²Î¡£
-5¡¢Ã»ÓĞBounding Box Regression
+# ç¨‹åºé—®é¢˜
+1ã€ç”±äºæ•°æ®é›†å°çš„åŸå› ï¼Œåœ¨å¾®è°ƒæ—¶å€™å¹¶æ²¡æœ‰åƒè®ºæ–‡ä¸€æ ·æŒ‰ä¸€ä¸ªbitch32ä¸ªæ­£æ ·æœ¬ï¼Œ128ä¸ªè´Ÿæ ·æœ¬è¾“å…¥ï¼Œæ„Ÿè§‰æ­£æ ·æœ¬è¿‡å°‘ï¼›
+2ã€è¿˜æ²¡æœ‰æ‡‚æœ€åæ˜¯æ€ä¹ˆç»™åŒºåŸŸæ‰“åˆ†çš„ï¼Œæ‰€æœ‰éæå¤§å€¼æŠ‘åˆ¶é›†åˆcannyç®—å­æ²¡æœ‰è¿›è¡Œï¼Œå¾…ç»­ï¼›
+# 3ã€å¯¹é€‰æ‹©çš„åŒºåŸŸæ˜¯ç›´æ¥è¿›è¡Œç¼©æ”¾çš„ï¼›
+4ã€ç”±äºæ•°æ®é›†åˆè®ºæ–‡é‡‡ç”¨ä¸ä¸€æ ·ï¼Œä½†æ˜¯å¾®è°ƒå’Œè®­ç»ƒSVMæ—¶é‡‡ç”¨çš„IOUé˜ˆå€¼ä¸€æ ·ï¼Œæœ‰å¾…è°ƒå‚ã€‚
+5ã€æ²¡æœ‰Bounding Box Regression
 
-# ¸Ä¶¯
-1¡¢ ¶ÔÑ¡ÔñÇøÓòµÄËõ·Å¼ÓÈëÁËpadding
-2¡¢ ½«AlexNet»¹Ô­³ÉºÍÔ­ÂÛÎÄÒ»ÑùÁË
-3¡¢ Ğ§¹ûºÜ²îÁË
+# æ”¹åŠ¨
+1ã€ å¯¹é€‰æ‹©åŒºåŸŸçš„ç¼©æ”¾åŠ å…¥äº†padding
+2ã€ å°†AlexNetè¿˜åŸæˆå’ŒåŸè®ºæ–‡ä¸€æ ·äº†
 
-# ²Î¿¼
-1¡¢ÂÛÎÄ£ºRich feature hierarchies for accurate object detection and semantic segmentation£¨https://www.computer.org/csdl/proceedings/cvpr/2014/5118/00/5118a580-abs.html£©
-2¡¢²©¿Í²Î¿¼£ºhttp://blog.csdn.net/u011534057/article/details/51218218ºÍhttp://blog.csdn.net/u011534057/article/details/51218250
-3¡¢´úÂë²Î¿¼£ºhttp://www.cnblogs.com/edwardbi/p/5647522.htmlºÍhttps://github.com/edwardbi/DeepLearningModels/tree/master/RCNN
+# å‚è€ƒ
+1ã€è®ºæ–‡ï¼šRich feature hierarchies for accurate object detection and semantic segmentationï¼ˆhttps://www.computer.org/csdl/proceedings/cvpr/2014/5118/00/5118a580-abs.htmlï¼‰
+2ã€åšå®¢å‚è€ƒï¼šhttp://blog.csdn.net/u011534057/article/details/51218218å’Œhttp://blog.csdn.net/u011534057/article/details/51218250
+3ã€ä»£ç å‚è€ƒï¼šhttp://www.cnblogs.com/edwardbi/p/5647522.htmlå’Œhttps://github.com/edwardbi/DeepLearningModels/tree/master/RCNN
 
